@@ -1,0 +1,54 @@
+@font-face {
+  font-family: DMSansRegular;
+  src: url(./assets/fonts/static/DMSans-Regular.ttf);
+}
+@font-face {
+  font-family: DMSansMedium;
+  src: url(./assets/fonts/static/DMSans-Medium.ttf);
+}
+
+:root {
+  --dark-purple: hsl(256, 67%, 59%);
+  --white: #ffffff;
+  --rounded-corners: 15px;
+}
+
+.grid-item1 {
+  grid-area: grid-item1;
+  background-color: red;
+}
+
+.grid-item2 {
+  grid-area: grid-item2;
+  font-family: DMSansMedium;
+  background-color: var(--dark-purple);
+  border-radius: var(--rounded-corners);
+}
+.grid-item3 {
+  grid-area: grid-item3;
+}
+.grid-item4 {
+  grid-area: right;
+}
+.grid-item5 {
+  grid-area: footer;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-areas:
+    "grid-item1 grid-item2 grid-item2 grid-item3"
+    "grid-item1 grid-item2 grid-item2 grid-item3";
+  /*6 Rows, 3 columns*/
+  /* ""
+    ""
+    ""; */
+  gap: 10px;
+  background-color: #2196f3;
+  padding: 10px;
+}
+
+.grid-item-text1 {
+  font-size: 30px;
+  font-family: DMSansMedium;
+}
