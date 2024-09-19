@@ -15,11 +15,16 @@
   --dark-yellow: hsl(39, 100%, 71%);
   --white: hsl(0, 0%, 100%);
   --black: hsl(0, 0%, 7%);
-  --rounded-corners: 15px;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: DMSansMedium;
 }
 
 body {
-  background-color: rgba(245, 245, 245, 255);
+  background-color: rgb(230, 230, 230);
 }
 
 .main-grid {
@@ -35,19 +40,48 @@ body {
   grid-template-rows: repeat(6, minmax(100px, 1fr));
   gap: 10px;
   padding: 10px;
+  min-height: 90vh;
+}
+
+.grid-item {
+  border-radius: 15px;
 }
 
 .grid-item1 {
   grid-area: grid-item1;
   background-color: var(--light-yellow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+
+.grid-item1 button {
+  background-color: var(--dark-yellow);
+  border-radius: 30px;
+  border-width: 0;
+  padding: 15px;
+  color: var(--dark-purple);
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 800;
+  transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+  width: 100%;
+  display: block;
+  min-width: 100px;
+}
+
+.grid-item1 button:hover {
+  background-color: var(--dark-purple);
+  color: var(--dark-yellow);
 }
 
 .grid-item2 {
   grid-area: grid-item2;
   font-family: DMSansMedium;
   background-color: var(--dark-purple);
-  border-radius: var(--rounded-corners);
 }
+
 .grid-item3 {
   grid-area: grid-item3;
   background-color: var(--light-purple);
@@ -75,5 +109,11 @@ body {
 
 .grid-item-text1 {
   font-size: 30px;
-  font-family: DMSansMedium;
+  font-weight: 1000;
+  line-height: 100%;
+  letter-spacing: -1px;
+  padding: 30px 0px;
+}
+.grid-item1 p i {
+  color: var(--dark-purple);
 }
