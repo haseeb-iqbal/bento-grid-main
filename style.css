@@ -21,6 +21,7 @@
   margin: 0;
   padding: 0;
   font-family: DMSansMedium;
+  color: var(--black);
 }
 
 body {
@@ -137,6 +138,13 @@ body {
 .grid-item8 {
   grid-area: grid-item8;
   background-color: var(--dark-purple);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 10px;
+
+  gap: 10px;
 }
 
 .grid-item-h1 {
@@ -155,7 +163,7 @@ body {
 }
 
 .grid-item-header-text2 {
-  font-size: calc(40px + 1vw);
+  font-size: calc(36px + 1vw);
   color: var(--white);
   width: 75%;
   text-align: center;
@@ -218,4 +226,14 @@ body {
 
 .grid-item7 img {
   width: 100%;
+}
+
+.grid-item8 img {
+  width: 50%;
+}
+
+.grid-item8 h1 {
+  color: var(--white);
+
+  font-size: calc(24px + 0.8vw);
 }
