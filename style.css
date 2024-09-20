@@ -128,6 +128,11 @@ body {
 .grid-item7 {
   grid-area: grid-item7;
   background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  padding: 20px;
 }
 .grid-item8 {
   grid-area: grid-item8;
@@ -200,4 +205,17 @@ body {
 .grid-item6 img {
   width: 100%;
   margin-bottom: -50px;
+}
+
+.grid-item7 h1 {
+  font-size: calc(50px + 0.8vw);
+}
+
+.grid-item7 p {
+  font-size: calc(10px + 0.4vw);
+  padding-top: 10px;
+}
+
+.grid-item7 img {
+  width: 100%;
 }
