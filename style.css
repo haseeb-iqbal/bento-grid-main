@@ -38,9 +38,11 @@ body {
     "grid-item4 grid-item7 grid-item8 grid-item8";
   grid-template-columns: repeat(4, minmax(100px, 1fr));
   grid-template-rows: repeat(6, minmax(100px, 1fr));
-  gap: 10px;
+  gap: 20px;
   padding: 10px;
   min-height: 90vh;
+  max-width: 1080px;
+  margin: 0 auto;
 }
 
 .grid-item {
@@ -80,6 +82,10 @@ body {
   grid-area: grid-item2;
   font-family: DMSansMedium;
   background-color: var(--dark-purple);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .grid-item3 {
@@ -107,13 +113,38 @@ body {
   background-color: var(--dark-purple);
 }
 
-.grid-item-text1 {
-  font-size: 30px;
-  font-weight: 1000;
-  line-height: 100%;
-  letter-spacing: -1px;
-  padding: 30px 0px;
+.grid-item-h1 {
+  font-weight: 100;
+  line-height: 80%;
+  letter-spacing: -3px;
 }
-.grid-item1 p i {
+
+.grid-item-header-text1 {
+  padding: 30px 0px;
+  font-size: calc(30px + 1vw);
+}
+
+.grid-item1 h1 i {
   color: var(--dark-purple);
+}
+
+.grid-item-header-text2 {
+  font-size: calc(40px + 1vw);
+  color: var(--white);
+  width: 75%;
+  text-align: center;
+}
+
+.grid-item2 img {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  width: 200px;
+}
+
+.grid-item2 small {
+  color: var(--white);
+}
+
+.yellow-text {
+  color: var(--dark-yellow);
 }
