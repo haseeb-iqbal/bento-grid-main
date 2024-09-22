@@ -237,3 +237,27 @@ body {
 
   font-size: calc(24px + 0.8vw);
 }
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 480px) {
+  /* .main-grid {
+    grid-template-areas:
+      "grid-item1"
+      "grid-item1"
+      "grid-item1"
+      "grid-item4"
+      "grid-item4"
+      "grid-item4";
+  }
+
+  body {
+    background-color: rgb(251, 0, 0);
+  } */
+}
