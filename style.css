@@ -41,7 +41,6 @@ body {
   grid-template-rows: repeat(6, minmax(100px, 1fr));
   gap: 20px;
   padding: 10px;
-  min-height: 90vh;
   max-width: 1080px;
   margin: 0 auto;
 }
@@ -108,7 +107,6 @@ body {
   grid-area: grid-item5;
   background-color: var(--white);
   padding: 20px;
-  padding-top: 50px;
 
   display: flex;
   flex-direction: column;
@@ -144,7 +142,6 @@ body {
   align-items: center;
   padding-left: 20px;
   padding-right: 10px;
-
   gap: 10px;
 }
 
@@ -238,8 +235,8 @@ body {
 
 .grid-item8 h1 {
   color: var(--white);
-
-  font-size: calc(24px + 0.8vw);
+  letter-spacing: -1px;
+  font-size: calc(20px + 0.8vw);
 }
 
 .attribution {
@@ -267,6 +264,9 @@ body {
 
   .grid-item3 {
     order: 4;
+    padding: 13px;
+    text-align: center;
+    padding-top: 30px;
   }
   .grid-item4 {
     order: 8;
@@ -276,16 +276,44 @@ body {
   }
   .grid-item6 {
     order: 3;
+    height: 200px;
   }
   .grid-item7 {
     order: 6;
   }
   .grid-item8 {
     order: 5;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
   }
+
   .grid-item6 img {
+    max-width: 60vw;
+  }
+  .grid-item3 img {
+    height: 100%;
     width: 100%;
-    margin-bottom: -50px;
-    max-width: 40vw;
+  }
+
+  .grid-item3 h1 {
+    font-size: calc(16px + 4vw);
+  }
+
+  .grid-item3 p {
+    padding: 10px;
+    padding-top: 0px;
+  }
+
+  .grid-item8 img {
+    width: 70%;
+  }
+
+  .grid-item8 h1 {
+    width: 70%;
+    text-align: center;
+    font-size: calc(24px + 3vw);
+
+    font-family: DMSansRegular;
   }
 }
