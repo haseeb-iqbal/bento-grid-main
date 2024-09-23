@@ -255,6 +255,8 @@ body {
 
   .grid-item1 {
     order: 7;
+    align-items: flex-start;
+    padding: 30px;
   }
 
   .grid-item2 {
@@ -280,6 +282,7 @@ body {
   }
   .grid-item7 {
     order: 6;
+    gap: 20px;
   }
   .grid-item8 {
     order: 5;
@@ -313,7 +316,31 @@ body {
     width: 70%;
     text-align: center;
     font-size: calc(24px + 3vw);
-
     font-family: DMSansRegular;
+  }
+
+  .grid-item7 img {
+    width: 70%;
+  }
+
+  .grid-item7 h1 {
+    font-size: calc(50px + 4vw);
+  }
+  .grid-item7 p {
+    font-size: calc(12px + 2vw);
+  }
+  .grid-item-header-text1 {
+    padding: 30px 0px;
+    font-size: calc(20px + 4vw);
+  }
+  .grid-item1 button {
+    width: 70%;
+  }
+
+  .grid-item4 img {
+    width: 70%;
+  }
+  .grid-item4 h1 {
+    font-size: calc(20px + 4vw);
   }
 }
