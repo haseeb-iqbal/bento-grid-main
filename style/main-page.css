@@ -272,21 +272,6 @@ img:hover {
   color: hsl(228, 45%, 44%);
 }
 
-/* The Close Button */
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-
 @media screen and (max-width: 768px) {
   .main-grid {
     display: flex;
