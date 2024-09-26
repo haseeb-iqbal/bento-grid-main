@@ -67,6 +67,10 @@
   text-decoration: none;
 }
 
+.modal-content a:active {
+  transform: translateY(1.5px);
+}
+
 .hire-me-buton {
   background-image: linear-gradient(90deg, #00c9ff 0%, #92fe9d 100%);
   color: black;
