@@ -1,7 +1,6 @@
-/* The Modal (background) */
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
 
-.modal {
+.profile-background {
   display: flex; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -22,7 +21,6 @@
   --profile-content-height: 680px;
 }
 
-/* Modal Content/Box */
 .modal-content {
   position: absolute;
   background-color: #333750;
@@ -125,8 +123,12 @@
   box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.4);
   text-align: center;
   text-decoration: none;
+  transition: transform 0.08s ease-in-out;
 }
 
+.modal-content a:hover {
+  transform: scale(1.04);
+}
 .modal-content a:active {
   transform: translateY(1.5px);
 }
