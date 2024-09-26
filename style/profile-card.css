@@ -21,6 +21,7 @@
 
 /* Modal Content/Box */
 .modal-content {
+  position: absolute;
   background-color: #333750;
   padding: 20px;
   max-width: 400px;
@@ -29,12 +30,65 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation: StartProfileRotate 0.25s ease-in-out forwards;
   border-radius: 20px;
   overflow: hidden;
+  z-index: 4;
+}
 
-  /* transform: rotateY(80deg); */
+.rainbow-background {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
 
-  animation: StartProfileRotate 0.25s ease-in-out forwards;
+  background: linear-gradient(
+    45deg,
+    #fb0094,
+    #0000ff,
+    #00ff00,
+    #ffff00,
+    #ff0000,
+    #fb0094,
+    #0000ff,
+    #00ff00,
+    #ffff00,
+    #ff0000
+  );
+  background-size: 400%;
+  /* width: calc(100% + 4px);
+  height: calc(100% + 4px); */
+  padding: 20px;
+  max-width: 407px;
+  height: 607px;
+  width: 82vw;
+  display: flex;
+  animation: steam 60s linear infinite,
+    StartProfileRotate 0.25s ease-in-out forwards;
+  border-radius: 20px;
+  pointer-events: none;
+}
+
+@keyframes steam {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.rainbow-background-blur {
+  position: absolute;
+  width: 110%;
+  height: 110%;
+  top: -30px;
+  backdrop-filter: blur(3px); /* apply the blur */
+  pointer-events: none; /* make the overlay click-through */
+  z-index: -2;
 }
 
 .modal-content h1 {
@@ -117,7 +171,7 @@
   padding: 14px;
 }
 
-/* 
+/*
 width: 140px;
 height: 140px; */
 
