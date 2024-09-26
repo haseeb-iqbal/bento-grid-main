@@ -19,7 +19,7 @@
   animation: DisplayProfileBackground 0.1s linear forwards;
   --profile-content-width: 80vw;
   --profile-content-max-width: 400px;
-  --profile-content-height: 600px;
+  --profile-content-height: 680px;
 }
 
 /* Modal Content/Box */
