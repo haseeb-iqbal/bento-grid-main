@@ -146,15 +146,25 @@ height: 140px; */
 
 .skills h6 {
   color: rgba(255, 255, 255, 0.8);
+  font-family: var(--profile-font);
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
 .skills ul li {
+  font-family: var(--profile-font);
+
   border: 1px solid #2d2747;
   border-radius: 2px;
   display: inline-block;
