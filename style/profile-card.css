@@ -60,7 +60,7 @@
   padding: 10px 16px;
   border-radius: 20px;
   border: 0;
-  font-size: 16px;
+  font-size: 18px;
   width: 150px;
   box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.4);
   text-align: center;
@@ -80,7 +80,6 @@
   font-size: 18px;
   color: white;
 }
-/* The Close Button */
 .close {
   align-self: flex-end;
   position: relative;
@@ -102,8 +101,8 @@
 .profile-pic-image {
   box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.5);
   border-radius: 50%;
-  width: 160px;
-  height: 160px;
+  width: 180px;
+  height: 180px;
   border: 1px solid #03bfcb;
   border-radius: 50%;
   padding: 14px;
@@ -116,9 +115,9 @@ height: 140px; */
 .email {
   margin-top: 20px;
   font-family: var(--profile-font);
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: 1px;
-  font-weight: 700;
+  font-weight: 500;
   color: rgba(255, 255, 255, 0.5);
   text-align: center;
 }
@@ -135,7 +134,7 @@ height: 140px; */
   background: linear-gradient(90deg, #333750 0%, #4b6bb755 100%);
   text-align: left;
   padding: 15px;
-  margin-top: 30px;
+  margin-top: 20px;
   margin-bottom: -100px;
   max-width: 400px;
   width: 80vw;
