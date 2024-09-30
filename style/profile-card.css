@@ -223,7 +223,6 @@
 
 .skills ul li {
   font-family: var(--profile-font);
-
   border: 1px solid #2d2747;
   border-radius: 2px;
   display: inline-block;
@@ -248,5 +247,53 @@
   }
   100% {
     background-color: rgb(0, 0, 0, 0.4);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .profile-background {
+    --profile-content-height: 630px;
+  }
+
+  .skills ul li {
+    font-size: 12px;
+  }
+
+  .modal-content a {
+    margin-left: 1px;
+    margin-right: 1px;
+    padding: 10px 5px;
+    font-size: 15px;
+    width: 110px;
+  }
+
+  .github-button i {
+    font-size: 15px;
+  }
+
+  .profile-pic-image {
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    border: 1px solid #03bfcb;
+    padding: 12px;
+  }
+
+  .modal-content h1 {
+    color: white;
+    font-family: var(--profile-font);
+    font-size: 36px;
+    font-weight: 400;
+    margin-top: 0px;
+    text-align: center;
+  }
+
+  .skills {
+    padding-top: 5px;
+  }
+
+  .skills h6 {
+    margin-bottom: 10px;
   }
 }
