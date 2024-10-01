@@ -23,3 +23,10 @@ window.onclick = function (event) {
     modal.style.display = "none";
   }
 };
+
+const gridItems = document.getElementsByClassName("grid-item");
+for (let i = 0; i < gridItems.length; i++) {
+  gridItems[i].onclick = function () {
+    modal.style.display = "flex";
+  };
+}

@@ -230,6 +230,11 @@
   margin: 0 7px 7px 0;
   padding: 7px;
   color: rgba(255, 255, 255, 0.8);
+  transition: transform 0.08s ease-in-out;
+}
+
+.skills ul li:hover {
+  transform: scale(1.2);
 }
 
 @keyframes StartProfileRotate {

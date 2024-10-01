@@ -50,6 +50,7 @@ body {
   animation: ScaleUp 0.25s ease-in-out forwards;
   box-shadow: 4px 4px 1px lightgray;
   transition: 0.25s box-shadow ease-in-out, 0.25s translate;
+  cursor: pointer;
 }
 
 .grid-item:hover {
