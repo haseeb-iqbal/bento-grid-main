@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
 
-.profile-background {
+.profile-card-background {
   display: flex; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -21,7 +21,7 @@
   --profile-content-height: 680px;
 }
 
-.modal-content {
+.profile-card-content {
   position: absolute;
   background-color: #333750;
   padding: 20px;
@@ -90,7 +90,7 @@
   z-index: -2;
 }
 
-.modal-content h1 {
+.profile-card-content h1 {
   color: white;
   font-family: var(--profile-font);
   font-size: 36px;
@@ -110,7 +110,7 @@
   text-align: center;
 }
 
-.modal-content a {
+.profile-card-content a {
   display: inline-block;
   font-family: var(--profile-font);
   margin-left: 10px;
@@ -126,10 +126,10 @@
   transition: transform 0.08s ease-in-out;
 }
 
-.modal-content a:hover {
+.profile-card-content a:hover {
   transform: scale(1.04);
 }
-.modal-content a:active {
+.profile-card-content a:active {
   transform: translateY(1.5px);
 }
 
@@ -146,7 +146,7 @@
   font-size: 18px;
   color: white;
 }
-.close {
+.profile-card-close {
   align-self: flex-end;
   position: relative;
   color: #aaa;
@@ -157,8 +157,8 @@
   top: -15px;
 }
 
-.close:hover,
-.close:focus {
+.profile-card-close:hover,
+.profile-card-close:focus {
   color: white;
   text-decoration: none;
   cursor: pointer;
@@ -200,7 +200,7 @@
   margin-bottom: -100px;
   max-width: 400px;
   width: 80vw;
-  height: 250px;
+  height: 400px;
 }
 
 .skills h6 {
@@ -264,7 +264,7 @@
     font-size: 12px;
   }
 
-  .modal-content a {
+  .profile-card-content a {
     margin-left: 1px;
     margin-right: 1px;
     padding: 10px 5px;
@@ -285,7 +285,7 @@
     padding: 12px;
   }
 
-  .modal-content h1 {
+  .profile-card-content h1 {
     color: white;
     font-family: var(--profile-font);
     font-size: 36px;
