@@ -18,16 +18,18 @@
   animation: DisplayProfileBackground 0.1s linear forwards;
   --profile-content-width: 80vw;
   --profile-content-max-width: 400px;
-  --profile-content-height: 680px;
+  --profile-content-height: 95vh;
+  --profile-content-max-height: 680px;
 }
 
 .profile-card-content {
   position: absolute;
   background-color: #333750;
   padding: 20px;
+  width: var(--profile-content-width);
   max-width: var(--profile-content-max-width);
   height: var(--profile-content-height);
-  width: var(--profile-content-width);
+  max-height: var(--profile-content-max-height);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -58,9 +60,10 @@
   );
   background-size: 400%;
   padding: 20px;
-  max-width: calc(var(--profile-content-max-width) + 7px);
-  height: calc(var(--profile-content-height) + 7px);
   width: calc(var(--profile-content-width) + 2vw);
+  max-width: calc(var(--profile-content-max-width) + 7px);
+  height: calc(var(--profile-content-height) + 2vh);
+  max-height: calc(var(--profile-content-max-height) + 7px);
   display: flex;
   animation: steam 90s linear infinite,
     StartProfileRotate 0.25s ease-in-out forwards;
