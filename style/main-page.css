@@ -281,6 +281,9 @@ img:hover {
 }
 
 @media screen and (max-width: 768px) {
+  .center-container {
+    height: 100%;
+  }
   .main-grid {
     display: flex;
     flex-direction: column;
